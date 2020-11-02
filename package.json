@@ -1,0 +1,19 @@
+{
+  "name": "electron-fivem-tray",
+  "version": "1.0.0",
+  "description": "Fivem laucher tray",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "git@github.com:lucianfialhobp/electron-fivem-tray.git",
+  "author": "Lucian Fialho <lucianfialhobp@hotmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^10.1.5"
+  },
+  "dependencies": {
+    "@sentry/electron": "^2.0.2",
+    "electron-store": "^6.0.1"
+  }
+}
