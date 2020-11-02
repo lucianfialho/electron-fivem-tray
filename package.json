@@ -4,13 +4,20 @@
   "description": "Fivem laucher tray",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "com.fivemLauncher.app",
+    "productName": "Fivem Laucher",
+    "target": "NSIS"
   },
   "repository": "git@github.com:lucianfialhobp/electron-fivem-tray.git",
   "author": "Lucian Fialho <lucianfialhobp@hotmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "electron": "^10.1.5"
+    "electron": "^10.1.5",
+    "electron-builder": "^22.9.1"
   },
   "dependencies": {
     "@sentry/electron": "^2.0.2",
