@@ -15,12 +15,19 @@ const contextItems = [
     const [fivemExe] = result.filePaths
     
     store.set('fivemExe', fivemExe);
-},}]
+  }},{
+  type: 'normal',
+  label: 'Quit',
+  role: 'quit',
+  enabled: true,
+},{
+  type: 'separator',
+}]
 
 const fivemExe = store.get('fivemExe')
 
 if(store.get('fivemExe')) {
-  contextItems.push({ label: 'Connectar ao servidor', type: 'normal', click: () => {
+  contextItems.push({label: 'Connectar ao servidor', type: 'normal', click: () => {
     execFile(fivemExe, ['+connect', 'raizesrp.city'], {shell: true});
   }})
 }
